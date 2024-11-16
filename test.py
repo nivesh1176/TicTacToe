@@ -4,7 +4,7 @@ def status(input_grid):
         print("Player 1 wins")
     if input_grid[0:3] == ["O", "O", "O"] or input_grid[3:6] == ["O", "O", "O"] or input_grid[6:] == ["O", "O", "O"] or input_grid[0:7:3] == ["O", "O", "O"] or input_grid[1:8:3] == ["O", "O", "O"] or input_grid[2:9:3] == ["O", "O", "O"] or input_grid[0:9:4] == ["O", "O", "O"] or input_grid[2:7:2] == ["O", "O", "O"]:
         print("Player 2 wins")
-    if input_grid[0:3] != ["X", "X", "X"] or input_grid[3:6] != ["X", "X", "X"] or input_grid[6:] != ["X", "X", "X"] or input_grid[0:7:3] != ["X", "X", "X"] or input_grid[1:8:3] != ["X", "X", "X"] or input_grid[2:9:3] != ["X", "X", "X"] or input_grid[0:9:4] != ["X", "X", "X"] or input_grid[2:7:2] != ["X", "X", "X"] or input_grid[0:3] != ["O", "O", "O"] or input_grid[3:6] != ["O", "O", "O"] or input_grid[6:] != ["O", "O", "O"] or input_grid[0:7:3] != ["O", "O", "O"] or input_grid[1:8:3] != ["O", "O", "O"] or input_grid[2:9:3] != ["O", "O", "O"] or input_grid[0:9:4] != ["O", "O", "O"] or input_grid[2:7:2] != ["O", "O", "O"]:
+    elif input_grid[0:3] != ["X", "X", "X"] or input_grid[3:6] != ["X", "X", "X"] or input_grid[6:] != ["X", "X", "X"] or input_grid[0:7:3] != ["X", "X", "X"] or input_grid[1:8:3] != ["X", "X", "X"] or input_grid[2:9:3] != ["X", "X", "X"] or input_grid[0:9:4] != ["X", "X", "X"] or input_grid[2:7:2] != ["X", "X", "X"] or input_grid[0:3] != ["O", "O", "O"] or input_grid[3:6] != ["O", "O", "O"] or input_grid[6:] != ["O", "O", "O"] or input_grid[0:7:3] != ["O", "O", "O"] or input_grid[1:8:3] != ["O", "O", "O"] or input_grid[2:9:3] != ["O", "O", "O"] or input_grid[0:9:4] != ["O", "O", "O"] or input_grid[2:7:2] != ["O", "O", "O"]:
         print("The Match is Draw")
 
 
