@@ -22,37 +22,34 @@ def input_1():
         p1 = input("P1 select value from 1 to 9: ")
         if p1.isdigit():
             p1 = int(p1)
-            if 1 <= p1 <= 9:
+            if 1 <= p1 <= 9 and input_grid[p1-1] not in ["X","O"]:
                 input_grid[p1-1]= "X"
                 draw_board(input_grid)
-                return
+                break
             else:
-                print("Enter a valid value between 1 and 9")
+                print("Use a valid move between 1 and 9")
                 
         else:
-            print("Enter a valid value between 1 and 9")
+            print("Use a valid move between 1 and 9")
         
 def input_2():
     while True:
         p2 = input("P2 select value from 1 to 9: ")
         if p2.isdigit():
             p2 = int(p2)
-            if 1 <= p2 <= 9:
+            if 1 <= p2 <= 9 and input_grid[p2-1] not in ["X","O"]:
                 input_grid[p2-1]= "O"
                 draw_board(input_grid)
-                return
+                break
             else:
-                print("Enter a valid value between 1 and 9")
-                input_2()
+                print("Use a valid move between 1 and 9")
         else:
-            print("Enter a valid value between 1 and 9")
-            input_2()
+            print("Use a valid move between 1 and 9")
 def main_input():
     for j in range(9):
         if j%2==0:
             input_1()
         else :
             input_2()
- 
 main_input()
 status()
